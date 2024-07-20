@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func dateToTime(date string) (string, error) {
+func DateToTime(date string) (string, error) {
 	dateFrom, err := time.Parse("2006-01-02", date)
 	if err != nil {
 		return "", errors.New("Date should be in format 2006-01-02")
